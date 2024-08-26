@@ -42,6 +42,12 @@ class SearchViewViewModel: ObservableObject {
         }
         
         let splits = accountId.split(separator: "#")
+        
+        guard splits.count == 2 else {
+            errorMsg = "Please enter an account in the form: Name#Tag"
+            return
+        }
+        
         let name = splits[0]
         let tag = splits[1]
         

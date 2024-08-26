@@ -7,37 +7,37 @@
 
 import Foundation
 
-struct DataMMRTier: Codable {
+struct MMRTier: Codable {
     let id: Int
     let name: String
 }
 
-struct DataMMRCurrent: Codable {
-    let tier: DataMMRTier
+struct MMRDataCurrent: Codable {
+    let tier: MMRTier
     let rr: Int
     let last_change: Int
     let elo: Int
 }
 
-struct DataMMR: Codable {
-    let current: DataMMRCurrent
+struct MMRData: Codable {
+    let current: MMRDataCurrent
 }
 
-struct ResponseMMR: Codable {
+struct MMRResponse: Codable {
     let status: Int
-    let data: DataMMR
+    let data: MMRData
 }
 
 class PlayerCardViewViewModel: ObservableObject {
     
-    @Published var dataMMR: DataMMR?
+    @Published var dataMMR: MMRData?
     @Published var errorMsg: String = ""
     
     init() {}
     
     func fetchPlayerData(playerData: PlayerData) {
         
-        var request = URLRequest(url: URL(string: "https://api.henrikdev.xyz/valorant/v3/by-puuid/mmr/\(playerData.region)/pc/\(playerData.puuid)")!,timeoutInterval: Double.infinity)
+        var request = URLRequest(url: URL(string: "https://api.henrikdev.xyz/valorant/v3/by-puuid/mmr/\(playerData.region)/pc/\(playerData.puuid)")!, timeoutInterval: Double.infinity)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("", forHTTPHeaderField: "Authorization")
 
@@ -53,7 +53,7 @@ class PlayerCardViewViewModel: ObservableObject {
             }
             
             do {
-                let decoded = try JSONDecoder().decode(ResponseMMR.self, from: data)
+                let decoded = try JSONDecoder().decode(MMRResponse.self, from: data)
 
                 DispatchQueue.main.async {
                     self?.dataMMR = decoded.data

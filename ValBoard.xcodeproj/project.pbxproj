@@ -29,6 +29,7 @@
 		EA6B02812C7C155400D27E28 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EA6B02802C7C155400D27E28 /* FirebaseAuth */; };
 		EA6B02832C7C155400D27E28 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EA6B02822C7C155400D27E28 /* FirebaseFirestore */; };
 		EA6B02852C7C172200D27E28 /* PlayerCardViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B02842C7C172200D27E28 /* PlayerCardViewViewModel.swift */; };
+		EA6B02872C7CE84500D27E28 /* RankIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B02862C7CE84500D27E28 /* RankIcons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		EA6B027A2C7B8D5200D27E28 /* PlayerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
 		EA6B027C2C7B91D400D27E28 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		EA6B02842C7C172200D27E28 /* PlayerCardViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardViewViewModel.swift; sourceTree = "<group>"; };
+		EA6B02862C7CE84500D27E28 /* RankIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankIcons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				EA6B02452C7A3FE900D27E28 /* ValBoardApp.swift */,
 				EA6B02492C7A3FEA00D27E28 /* Assets.xcassets */,
 				EA6B026E2C7A4ABE00D27E28 /* Extensions.swift */,
+				EA6B02862C7CE84500D27E28 /* RankIcons.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				EA6B02712C7A4B4B00D27E28 /* ContentViewViewModel.swift in Sources */,
 				EA6B02792C7B6E8B00D27E28 /* SearchViewViewModel.swift in Sources */,
 				EA6B02732C7A4D9200D27E28 /* ProfileView.swift in Sources */,
+				EA6B02872C7CE84500D27E28 /* RankIcons.swift in Sources */,
 				EA6B026B2C7A4A7E00D27E28 /* RegisterViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
