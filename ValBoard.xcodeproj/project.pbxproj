@@ -12,9 +12,6 @@
 		EA6B024A2C7A3FEA00D27E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6B02492C7A3FEA00D27E28 /* Assets.xcassets */; };
 		EA6B024D2C7A3FEA00D27E28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6B024C2C7A3FEA00D27E28 /* Preview Assets.xcassets */; };
 		EA6B02562C7A41AD00D27E28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6B02552C7A41AD00D27E28 /* GoogleService-Info.plist */; };
-		EA6B02592C7A427500D27E28 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EA6B02582C7A427500D27E28 /* FirebaseAnalytics */; };
-		EA6B025B2C7A427500D27E28 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EA6B025A2C7A427500D27E28 /* FirebaseAuth */; };
-		EA6B025D2C7A427500D27E28 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EA6B025C2C7A427500D27E28 /* FirebaseFirestore */; };
 		EA6B02632C7A481000D27E28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B02622C7A481000D27E28 /* LoginView.swift */; };
 		EA6B02652C7A49F000D27E28 /* ValButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B02642C7A49F000D27E28 /* ValButton.swift */; };
 		EA6B02672C7A4A3000D27E28 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B02662C7A4A3000D27E28 /* LoginViewViewModel.swift */; };
@@ -28,6 +25,10 @@
 		EA6B02792C7B6E8B00D27E28 /* SearchViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B02782C7B6E8B00D27E28 /* SearchViewViewModel.swift */; };
 		EA6B027B2C7B8D5200D27E28 /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B027A2C7B8D5200D27E28 /* PlayerCardView.swift */; };
 		EA6B027D2C7B91D400D27E28 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B027C2C7B91D400D27E28 /* SearchView.swift */; };
+		EA6B027F2C7C155400D27E28 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EA6B027E2C7C155400D27E28 /* FirebaseAnalytics */; };
+		EA6B02812C7C155400D27E28 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EA6B02802C7C155400D27E28 /* FirebaseAuth */; };
+		EA6B02832C7C155400D27E28 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EA6B02822C7C155400D27E28 /* FirebaseFirestore */; };
+		EA6B02852C7C172200D27E28 /* PlayerCardViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B02842C7C172200D27E28 /* PlayerCardViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		EA6B02782C7B6E8B00D27E28 /* SearchViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewViewModel.swift; sourceTree = "<group>"; };
 		EA6B027A2C7B8D5200D27E28 /* PlayerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
 		EA6B027C2C7B91D400D27E28 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		EA6B02842C7C172200D27E28 /* PlayerCardViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6B02592C7A427500D27E28 /* FirebaseAnalytics in Frameworks */,
-				EA6B025B2C7A427500D27E28 /* FirebaseAuth in Frameworks */,
-				EA6B025D2C7A427500D27E28 /* FirebaseFirestore in Frameworks */,
+				EA6B027F2C7C155400D27E28 /* FirebaseAnalytics in Frameworks */,
+				EA6B02812C7C155400D27E28 /* FirebaseAuth in Frameworks */,
+				EA6B02832C7C155400D27E28 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +126,7 @@
 				EA6B02702C7A4B4B00D27E28 /* ContentViewViewModel.swift */,
 				EA6B02742C7A4D9F00D27E28 /* ProfileViewViewModel.swift */,
 				EA6B02782C7B6E8B00D27E28 /* SearchViewViewModel.swift */,
+				EA6B02842C7C172200D27E28 /* PlayerCardViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -164,9 +167,9 @@
 			);
 			name = ValBoard;
 			packageProductDependencies = (
-				EA6B02582C7A427500D27E28 /* FirebaseAnalytics */,
-				EA6B025A2C7A427500D27E28 /* FirebaseAuth */,
-				EA6B025C2C7A427500D27E28 /* FirebaseFirestore */,
+				EA6B027E2C7C155400D27E28 /* FirebaseAnalytics */,
+				EA6B02802C7C155400D27E28 /* FirebaseAuth */,
+				EA6B02822C7C155400D27E28 /* FirebaseFirestore */,
 			);
 			productName = ValBoard;
 			productReference = EA6B02422C7A3FE900D27E28 /* ValBoard.app */;
@@ -232,6 +235,7 @@
 				EA6B02652C7A49F000D27E28 /* ValButton.swift in Sources */,
 				EA6B02692C7A4A6700D27E28 /* RegisterView.swift in Sources */,
 				EA6B02752C7A4D9F00D27E28 /* ProfileViewViewModel.swift in Sources */,
+				EA6B02852C7C172200D27E28 /* PlayerCardViewViewModel.swift in Sources */,
 				EA6B026D2C7A4AA200D27E28 /* User.swift in Sources */,
 				EA6B02482C7A3FE900D27E28 /* ContentView.swift in Sources */,
 				EA6B027B2C7B8D5200D27E28 /* PlayerCardView.swift in Sources */,
@@ -457,17 +461,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EA6B02582C7A427500D27E28 /* FirebaseAnalytics */ = {
+		EA6B027E2C7C155400D27E28 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EA6B02572C7A427500D27E28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		EA6B025A2C7A427500D27E28 /* FirebaseAuth */ = {
+		EA6B02802C7C155400D27E28 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EA6B02572C7A427500D27E28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		EA6B025C2C7A427500D27E28 /* FirebaseFirestore */ = {
+		EA6B02822C7C155400D27E28 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EA6B02572C7A427500D27E28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;

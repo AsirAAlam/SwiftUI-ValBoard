@@ -66,7 +66,10 @@ class SearchViewViewModel: ObservableObject {
                 }
             }
             catch {
-                self?.errorMsg = "Error fetching account"
+                DispatchQueue.main.async {
+                    self?.errorMsg = "Error fetching account"
+                }
+                
                 print(error)
             }
         }
