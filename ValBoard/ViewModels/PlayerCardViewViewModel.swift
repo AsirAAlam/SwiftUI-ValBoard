@@ -30,7 +30,7 @@ struct MMRResponse: Codable {
 
 class PlayerCardViewViewModel: ObservableObject {
     
-    @Published var dataMMR: MMRData?
+    @Published var mmrData: MMRData?
     @Published var errorMsg: String = ""
     
     init() {}
@@ -56,7 +56,7 @@ class PlayerCardViewViewModel: ObservableObject {
                 let decoded = try JSONDecoder().decode(MMRResponse.self, from: data)
 
                 DispatchQueue.main.async {
-                    self?.dataMMR = decoded.data
+                    self?.mmrData = decoded.data
                 }
             }
             catch {

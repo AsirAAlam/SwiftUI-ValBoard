@@ -17,6 +17,9 @@ struct Card: Codable {
 struct PlayerData: Codable {
     let puuid: String
     let region: String
+    let name: String?
+    let tag: String?
+    let card: Card?
 }
 
 struct Response: Codable {
